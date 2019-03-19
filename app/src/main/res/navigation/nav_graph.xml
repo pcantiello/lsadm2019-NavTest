@@ -5,7 +5,9 @@
             app:startDestination="@id/homeFragment">
 
     <fragment android:id="@+id/homeFragment" android:name="it.unicampania.lsadm.navtest.HomeFragment"
-              android:label="fragment_home" tools:layout="@layout/fragment_home"/>
+              android:label="fragment_home" tools:layout="@layout/fragment_home">
+        <action android:id="@+id/action_homeToFiglio" app:destination="@id/figlioFragment"/>
+    </fragment>
     <fragment android:id="@+id/figlioFragment" android:name="it.unicampania.lsadm.navtest.FiglioFragment"
               android:label="fragment_figlio" tools:layout="@layout/fragment_figlio"/>
 </navigation>
